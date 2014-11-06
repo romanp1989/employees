@@ -1,0 +1,65 @@
+select, ul {
+  height: 300px;
+  overflow: auto;
+  width: 200px;
+  border: 1px solid #000;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+li {
+  margin: 2;
+  padding: 0;
+  width: 100%;
+}
+
+li:hover {
+  background-color: Highlight;
+  color: HighlightText;
+}
+
+/*label {
+  color: WindowText;
+  background-color: Window;
+  margin: 0;
+  padding: 0;
+}
+label:hover {
+  background-color: Highlight;
+  color: HighlightText;
+}*/
+
+.wrapper {
+  /* set the height of the element which contains what you want to center */
+  height: 100%;
+  text-align: center;
+  /* these styles are optional, to set width horizontally center the page */
+  /*max-width: 500px;*/
+  margin: 0 auto;
+}
+.wrapper:before, .container {
+  /* these are the important styles for the centered element: */
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
+.wrapper:before {
+  /* this is the important part */
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+  /* this just takes care of whitespace added by having display:inline-block (there are other methods) */
+  margin-left: -0.25em;
+}
+
+.container div {
+  display:inline-block;
+  margin:0 10px;
+}
