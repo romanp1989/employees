@@ -1,0 +1,117 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- <link href="css/bootstrap.min.css" rel="stylesheet" /> -->
+	<!-- <link href="css/bootstrap-multiselect.css" /> -->
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<!-- // <script src="js/bootstrap.min.js"></script> -->
+	<!--<script src="js/bootstrap-multiselect.js"></script> -->
+
+
+	<style type="text/css">
+
+   select, ul { height: 300px; overflow: auto; width: 200px; border: 1px solid #000; }
+   ul { list-style-type: none; margin: 0; padding: 0; overflow-x: hidden; }
+   li { margin: 2; padding: 0; }
+   label { color: WindowText; background-color: Window; margin: 0; padding: 0;}
+   label:hover { background-color: Highlight; color: HighlightText; }
+  
+ 	.wrapper {
+  /* set the height of the element which contains what you want to center */
+  height: 100%;
+  text-align: center;
+  /* these styles are optional, to set width horizontally center the page */
+  /*max-width: 500px;*/
+  margin: 0 auto;
+}
+.wrapper:before, .container {
+  /* these are the important styles for the centered element: */
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
+.wrapper:before {
+  /* this is the important part */
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+  /* this just takes care of whitespace added by having display:inline-block (there are other methods) */
+  margin-left: -0.25em;
+}
+
+.container div {
+	display:inline-block;
+	margin:0 10px;
+}
+
+	</style>
+</head>
+<body>
+	<script src="js/events.js"></script>
+	<!-- Test -->
+	<!-- <div class="dropdown">
+		<ul class="dropdown-menu">
+			<li>Test</li>			
+		</ul>
+	</div> -->
+	<div class="wrapper">
+		<div class="container">
+			<h3>Список сотрудников</h3>
+			<!-- <div class="row"> -->
+				<!-- <select multiple id="list1Id" class=".col-md-4" style="width: 150;" size=10>
+					<option value="1">Test5</option>
+					<option value="2">Test2</option>
+					<option value="3">Test3</option>
+				</select> -->
+				<!-- <div class=".col-md-4">
+					<button type="button">></button>
+					<br>
+					<button type="button"><</button>
+				</div> -->
+				<!-- <select multiple id="list2Id" class=".col-md-4" style="width: 150;" size=10>
+					<option value="4">Test4</option>
+					<option value="5">Test5</option>
+					<option value="6">Test6</option>
+				</select> -->
+				<div>
+					<b>Сотрудники</b>
+					<ul id="list3Id">
+						<!-- <li><label><input type="checkbox" id="item1">Test1</label></li>
+						<li><label><input type="checkbox">Test2</label></li>
+						<li><label><input type="checkbox">Test3</label></li>
+						<li><label><input type="checkbox">Test4</label></li>
+						<li><label><input type="checkbox">Test5</label></li> -->
+						<li><input type="checkbox"><label>Иванов Иван</label></li>
+						<li><input type="checkbox"><label>Петров Петр</label></li>
+						<li><input type="checkbox"><label>Зеленый Вениамин</label></li>
+						<li><input type="checkbox"><label>Гербулов Иван</label></li>
+						<li><input type="checkbox"><label>Осипова Анна</label></li>
+						<li><input type="checkbox"><label>Мелкумянц Алексей</label></li>
+						<li><input type="checkbox"><label>Черный Алексей</label></li>
+						<li><input type="checkbox"><label>Король Иван</label></li>
+						<li><input type="checkbox"><label>Сидоров Денис</label></li>
+						<li><input type="checkbox"><label>Заборин Евгений</label></li>
+						<li><input type="checkbox"><label>Резин Петр</label></li>
+						<li><input type="checkbox"><label>Валютин Сергей</label></li>
+						<li><input type="checkbox"><label>Дорин Александр</label></li>
+						<li><input type="checkbox"><label>Селезнев Петр</label></li>
+						<li><input type="checkbox"><label>Лезвиев Андрей</label></li>
+					</ul>
+				</div>
+				<div>
+					<b>Выбранные сотрудники</b>
+					<ul id="list4Id">
+						<!-- <li><label><input type="checkbox" id="item1">Test6</label></li>
+						<li><label><input type="checkbox">Test7</label></li>
+						<li><label><input type="checkbox">Test8</label></li>
+						<li><label><input type="checkbox">Test9</label></li>
+						<li><label><input type="checkbox">Test10</label></li> -->
+					</ul>
+				</div>
+			<!-- </div> -->
+		</div>
+	</div>
+</body>
+</html>
